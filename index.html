@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>MODERN SAINT - The Vault</title>
+    <meta name="description" content="Enter the vault to access exclusive beats.">
+    <meta http-equiv="refresh" content="0; url=password.html">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            border: 2px solid #333;
+            border-top: 2px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>Redirecting to The Vault...</p>
+    </div>
+    <script>
+        // Fallback redirect in case meta refresh doesn't work
+        console.log('Index.html: Redirecting to password.html...');
+        setTimeout(() => {
+            window.location.replace('password.html');
+        }, 1000);
+    </script>
+</body>
+</html>

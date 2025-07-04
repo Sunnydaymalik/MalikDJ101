@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>MODERN SAINT - Underground Beats</title>
+    <meta name="description" content="Underground Elegance. Sonic Architecture. Download and stream exclusive beats.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Fallback styles in case external CSS fails to load */
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .navbar, .hero, .beats-section, .contact-section, .footer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>MODERN SAINT</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#beats" class="nav-link">Beats</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-video-background">
+            <video autoplay muted loop playsinline>
+                <source src="Assets/motion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">THE VAULT</h1>
+            <p class="hero-subtitle"></p>
+            <p class="hero-description">Welcome to the vault, a Saint archive.</p>
+            <a href="#beats" class="cta-button">Latest</a>
+        </div>
+        <div class="hero-visual">
+            <div class="vinyl-disc"></div>
+        </div>
+    </header>
+
+    <section id="beats" class="beats-section">
+        <div class="container">
+            <h2 class="section-title">Sounds</h2>
+            
+            <div class="filters">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchBeats" placeholder="Search beats...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="dark">Dark</button>
+                    <button class="filter-btn" data-filter="melodic">Melodic</button>
+                    <button class="filter-btn" data-filter="experimental">Experimental</button>
+                </div>
+            </div>
+
+            <div class="beats-grid" id="beatsGrid">
+                <!-- Beat cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect</h3>
+                    <p>Let's collaborate</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>coleprince63@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-music"></i>
+                            <span>Custom beats available</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MODERN SAINT</h3>
+                    <p>Underground Elegance. Sonic Architecture.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#beats">Beats</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/prince_.cole/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-soundcloud"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MODERN SAINT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Player Modal -->
+    <div class="audio-modal" id="audioModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-audio-player">
+                <h3 id="modalBeatTitle">Beat Title</h3>
+                <audio id="modalAudio" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="modal-actions">
+                    <button class="download-btn" id="downloadBtn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <button class="license-btn" id="licenseBtn">
+                        <i class="fas fa-copyright"></i> License
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Wait for page to load before checking authentication
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('Page loaded, checking authentication...');
+            
+            // Authentication check
+            if (sessionStorage.getItem('authenticated') !== 'true') {
+                console.log('Not authenticated, redirecting to password page...');
+                window.location.replace('password.html');
+                return;
+            }
+            
+            console.log('Authentication successful, page should display normally');
+        });
+
+        // Set session timeout (5 hours = 18000000 milliseconds)
+        const SESSION_TIMEOUT = 18000000;
+        let sessionTimer;
+
+        // Function to reset session timer
+        function resetSessionTimer() {
+            clearTimeout(sessionTimer);
+            sessionTimer = setTimeout(() => {
+                sessionStorage.removeItem('authenticated');
+                window.close();
+                // Fallback if window.close() doesn't work
+                window.location.replace('index.html');
+            }, SESSION_TIMEOUT);
+        }
+
+        // Start session timer
+        resetSessionTimer();
+
+        // Reset timer on user activity
+        ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'].forEach(event => {
+            document.addEventListener(event, resetSessionTimer, true);
+        });
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Page is hidden (tab switch, minimize, etc.)
+                setTimeout(() => {
+                    if (document.hidden) {
+                        sessionStorage.removeItem('authenticated');
+                        window.close();
+                    }
+                }, 1000); // 1 second delay
+            }
+        });
+
+        // Check session age on page load
+        window.addEventListener('load', function() {
+            const loginTime = sessionStorage.getItem('loginTime');
+            if (loginTime) {
+                const currentTime = Date.now();
+                const sessionAge = currentTime - parseInt(loginTime);
+                
+                if (sessionAge > SESSION_TIMEOUT) {
+                    sessionStorage.removeItem('authenticated');
+                    sessionStorage.removeItem('loginTime');
+                    window.close();
+                    // Fallback if window.close() doesn't work
+                    window.location.replace('index.html');
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
