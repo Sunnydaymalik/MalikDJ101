@@ -25,8 +25,8 @@ const beatsData = [
         title: "till i find my way",
         genre: "melodic",
         duration: "3:28",
-        audioUrl: "beats/till i find my way prod. me.mp3",
-        downloadUrl: "beats/till i find my way prod. me.mp3",
+        audioUrl: "beats/till i find my way (another ver).mp3",
+        downloadUrl: "beats/till i find my way (another ver).mp3",
         licenseUrl: "https://gumroad.com/l/golden-hour",
         description: "Warm melodic composition with soulful mixing"
     },
