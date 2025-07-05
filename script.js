@@ -2,33 +2,33 @@
 const beatsData = [
     {
         id: 1,
-        title: "Cruise(cruel summer collection)",
+        title: "Cruel Summer",
         genre: "dark",
-        duration: "3:40",
-        audioUrl: "beats/Cruise(cruel summer collection) by P.mp3",
-        downloadUrl: "beats/Cruise(cruel summer collection) by P.mp3",
+        duration: "3:07",
+        audioUrl: "Cruel summer.mp3",
+        downloadUrl: "Cruel summer.mp3",
         licenseUrl: "https://gumroad.com/l/ashes-ivory",
-        description: "A haunting melody with deep bass and ethereal textures"
+        description: "Drak r&b with smooth textures"
     },
     {
         id: 2,
-        title: "Midnight Echo",
-        genre: "dark",
-        duration: "4:12",
-        audioUrl: "beats/midnight-echo.mp3",
-        downloadUrl: "beats/midnight-echo.mp3",
+        title: "WE$TSIDE NIGGA",
+        genre: "melodic",
+        duration: "2:55",
+        audioUrl: "beats/WE$TSIDE NIGGA.mp3",
+        downloadUrl: "beats/WE$TSIDE NIGGA.mp3",
         licenseUrl: "https://gumroad.com/l/midnight-echo",
-        description: "Dark atmospheric beat with heavy 808s"
+        description: "Melodic as fuck"
     },
     {
         id: 3,
-        title: "Golden Hour",
+        title: "till i find my way",
         genre: "melodic",
         duration: "3:28",
-        audioUrl: "beats/golden-hour.mp3",
-        downloadUrl: "beats/golden-hour.mp3",
+        audioUrl: "beats/till i find my way prod. me.mp3",
+        downloadUrl: "beats/till i find my way prod. me.mp3",
         licenseUrl: "https://gumroad.com/l/golden-hour",
-        description: "Warm melodic composition with soulful samples"
+        description: "Warm melodic composition with soulful mixing"
     },
     {
         id: 4,
