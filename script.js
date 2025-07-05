@@ -5,8 +5,8 @@ const beatsData = [
         title: "Cruel Summer",
         genre: "dark",
         duration: "3:07",
-        audioUrl: "Cruel summer.mp3",
-        downloadUrl: "Cruel summer.mp3",
+        audioUrl: "beats/Cruel summer.mp3",
+        downloadUrl: "beats/Cruel summer.mp3",
         licenseUrl: "https://gumroad.com/l/ashes-ivory",
         description: "Drak r&b with smooth textures"
     },
